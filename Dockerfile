@@ -17,7 +17,7 @@ WORKDIR rameplayer-webui
 RUN npm install && \
     bower install --allow-root
 
-# Mount points, image will be written to /image, .abuild contains packager keys
+# Mount point for build
 VOLUME ["/build"]
 
 # Entrypoint script as guided in
